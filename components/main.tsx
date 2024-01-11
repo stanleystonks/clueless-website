@@ -131,7 +131,7 @@ export default function Main() {
             <label htmlFor="">Two</label>
             <input type="text" />
             <label htmlFor="">Three</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id=""></textarea>
           </form>
         </div>
       </section>
