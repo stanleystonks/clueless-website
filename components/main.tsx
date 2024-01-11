@@ -85,14 +85,14 @@ export default function Main() {
       </section>
 
       <section id="contact" className="py-4 text-center lg:text-left">
-        <h2 className="relative top-8 px-32 md:top-10">Let's Talk!</h2>
+        <h2 className="relative top-8 px-32 md:top-10">Lets Talk!</h2>
         <div className="flex flex-col justify-between gap-20 lg:gap-32 bg-custombg px-16 py-20 lg:flex-row lg:px-32">
           <div className="flex flex-1 flex-col justify-between gap-12">
             <div className="italic">
               <p>
-                Whether you're on a personal quest for mindful living or a
+                Whether youre on a personal quest for mindful living or a
                 fellow psychologist with a shared passion for self-development,
-                we're eager to connect with you.
+                were eager to connect with you.
               </p>
               <br />
               <p>

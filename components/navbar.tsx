@@ -61,8 +61,8 @@ export default function NavBar({ direction }: NavBarProps) {
   return (
     <NavigationMenu className={`${listVisibility}`}>
       <NavigationMenuList className={`${listDirectionClass}`}>
-        {routes.map((route) => (
-          <NavigationMenuItem className="">
+        {routes.map((route, index) => (
+          <NavigationMenuItem className="" key={index}>
             <Link href={route.href} legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} ${listStyle}`}
