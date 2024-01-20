@@ -27,7 +27,7 @@ const routes = [
   },
   {
     name: "About",
-    href: "#",
+    href: "/about",
   },
   {
     href: "#",
@@ -39,7 +39,6 @@ const routes = [
   },
 ];
 
-
 type NavBarProps = {
   direction: "horizontal" | "vertical" | null;
 };
@@ -49,12 +48,13 @@ export default function NavBar({ direction }: NavBarProps) {
   let listDirectionClass = "";
   let listVisibility = "";
   let listStyle = "";
+
   if (direction === "horizontal") {
     listVisibility = "hidden lg:flex";
-    listDirectionClass = "gap-9"; // This is just an example, adjust as needed
+    listDirectionClass = "gap-9";
     listStyle = "bg-black text-xl";
   } else if (direction === "vertical") {
-    listDirectionClass = "flex-col gap-9 items-center"; // This is just an example, adjust as needed
+    listDirectionClass = "flex-col gap-9 items-center";
     listStyle = "";
   }
 

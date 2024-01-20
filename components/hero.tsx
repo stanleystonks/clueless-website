@@ -39,12 +39,13 @@ export default function Hero() {
   // }, []);
 
   return (
-    <section className="hero flex flex-col items-center justify-center gap-8 md:gap-12 px-16 text-center md:px-0">
+    <section className="hero flex flex-col items-center justify-center gap-8 px-16 text-center md:gap-12 md:px-0">
       <h2 className="font-palomino">Mindful Living Made Easy</h2>
-      <p className="text-sm text-muted-foreground custom-text md:w-1/2 md:text-lg">
+      <p className="custom-text text-sm text-muted-foreground md:w-1/2 md:text-lg">
         Take control of your life, cultivate mindfulness, and unlock your full
         potential. With practical guidance and powerful tools, we support you in
-        tracking and managing the essential aspects of your life.
+        tracking and managing the essential aspects of your life easily and
+        efficiently.
       </p>
       <Button variant="custom" size="custom">
         Explore our Approach

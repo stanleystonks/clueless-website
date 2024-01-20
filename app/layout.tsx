@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Actor } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 const actor = Actor({ weight: ['400'], subsets: ['latin'] });
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={actor.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

@@ -7,7 +7,7 @@ import NavBar from "./navbar";
 export default function Header() {
   return (
     <header className="font-palomino flex items-center justify-between bg-black px-10 md:px-20 text-white">
-      <Link href="#" className="flex items-center gap-4">
+      <Link href="/" className="flex items-center gap-4">
         <Image
           src="/cluelessLogo.svg"
           alt="Clueless Logo"

@@ -2,11 +2,11 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'palomino': ['palomino-sans-one', 'sans-serif'],
+        palomino: ["palomino-sans-one", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -60,7 +60,11 @@ module.exports = {
         custombg: {
           DEFAULT: "hsl(var(--custom-bg))",
           foreground: "hsl(var(--custom-bg))",
-        }
+        },
+        custombg2: {
+          DEFAULT: "hsl(var(--custom-bg2))",
+          foreground: "hsl(var(--custom-bg2))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -77,17 +81,17 @@ module.exports = {
           to: { height: 0 },
         },
         bounceBall: {
-          '0%': { transform: 'translateX(0) translateY(0)' },
-          '50%': { transform: 'translateX(100px) translateY(-100px)' },
-          '100%': { transform: 'translateX(200px) translateY(0)' }
-        }
+          "0%": { transform: "translateX(0) translateY(0)" },
+          "50%": { transform: "translateX(100px) translateY(-100px)" },
+          "100%": { transform: "translateX(200px) translateY(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "bounce-ball": "bounceBall 2s infinite"
+        "bounce-ball": "bounceBall 2s infinite",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
