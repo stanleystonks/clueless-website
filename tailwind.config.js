@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       fontFamily: {
         palomino: ["palomino-sans-one", "sans-serif"],
+        stevie: ["stevie-sans", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

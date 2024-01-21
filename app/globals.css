@@ -79,7 +79,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background font-normal text-foreground;
+    @apply bg-background font-normal text-foreground font-stevie;
   }
   h2 {
     @apply text-6xl md:text-7xl tracking-wide font-palomino;
@@ -87,12 +87,9 @@
   h3 {
     @apply text-3xl md:text-4xl tracking-wide font-palomino;
   }
-  header {
+  /* header {
     @apply vh15 md:vh20;
-  }
-  .hero {
-    @apply vh85 md:vh80;
-  }
+  } */
 }
 
 @layer utilities {
@@ -102,13 +99,23 @@
     border-radius: 50%;
   }
 
-  .custom-text {
-    /* font-size: 1.5rem; */
-    line-height: 2.25rem;
-    letter-spacing: 0.03rem;
+  .hero {
+    height: calc(100vh - 9rem);
   }
 
-  .vh20 {
+  .hero-mobile {
+    height: calc(100vh - 8rem);
+  }
+
+  .hero-text {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    letter-spacing: 0.03rem;
+    font-weight: 400;
+    @apply font-stevie;
+  }
+
+  /* .vh20 {
     height: 20vh;
   }
 
@@ -122,5 +129,5 @@
 
   .vh85 {
     height: 85vh;
-  }
+  } */
 }

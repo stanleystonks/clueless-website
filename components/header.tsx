@@ -4,23 +4,42 @@ import Link from "next/link";
 import MobileToggle from "./mobile-toggle";
 import NavBar from "./navbar";
 
+import logo from "../public/cluelessLogoFull.svg";
+import logoMobile from "../public/cluelessLogo.svg";
+
 export default function Header() {
   return (
-    <header className="font-palomino flex items-center justify-between bg-black px-10 md:px-20 text-white">
-      <Link href="/" className="flex items-center gap-4">
+    <header className="relative flex items-end justify-between px-10 pb-4 font-palomino text-white md:px-20 h-32 md:h-36">
+      <div className="absolute left-0 top-0 h-full w-full">
+        <div className="h-1/3 w-full bg-[#242424]"></div>
+        <div className="h-2/3 w-full bg-black"></div>
+      </div>
+      <Link href="/" className="relative z-10 flex items-center">
         <Image
-          src="/cluelessLogo.svg"
+          src={logo}
           alt="Clueless Logo"
-          width={80}
-          height={80}
+          width={300}
           priority
-
-          className="w-10 md:w-20"
+          className="hidden lg:block"
         />
-        <h1 className="hidden text-5xl md:block">Clueless</h1>
+        <Image
+          src={logoMobile}
+          alt="Clueless Logo"
+          width={98}
+          priority
+          className="hidden md:block lg:hidden"
+        />
+        <Image
+          src={logoMobile}
+          alt="Clueless Logo"
+          width={55}
+          priority
+          className="md:hidden"
+        />
+        <h1 className="sr-only">Clueless</h1>
       </Link>
       <MobileToggle />
-      <NavBar direction='horizontal' />
+      <NavBar direction="horizontal" />
     </header>
   );
 }

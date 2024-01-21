@@ -35,8 +35,14 @@ const articles = [
 export default function About() {
   return (
     <section id="about" className="">
-      <h2 className="bg-black py-12 text-center text-white">About Us</h2>
-      <div className="flex flex-col gap-12 py-12 md:px-36 px-16 bg-custombg">
+      <div className="relative">
+        <h2 className="relative z-10 pt-20 pb-6 text-center text-white">About Us</h2>
+        <div className="absolute left-0 top-0 h-full w-full">
+          <div className="h-2/3 w-full bg-[#242424]"></div>
+          <div className="h-1/3 w-full bg-black"></div>
+        </div>
+      </div>
+      <div className="flex flex-col gap-12 bg-custombg px-16 py-12 md:px-36">
         <MainArticle article={articles[3]} />
         <Button className="mx-auto w-min rounded-full">Meet the Team</Button>
       </div>

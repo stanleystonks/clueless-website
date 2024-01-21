@@ -18,16 +18,20 @@ import {
 
 const routes = [
   {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  {
     name: "Concept",
     href: "#",
   },
   {
     name: "Apps",
     href: "#",
-  },
-  {
-    name: "About",
-    href: "/about",
   },
   {
     href: "#",
@@ -50,19 +54,19 @@ export default function NavBar({ direction }: NavBarProps) {
   let listStyle = "";
 
   if (direction === "horizontal") {
-    listVisibility = "hidden lg:flex";
+    listVisibility = "hidden xl:flex mb-2";
     listDirectionClass = "gap-9";
     listStyle = "bg-black text-xl";
   } else if (direction === "vertical") {
-    listDirectionClass = "flex-col gap-9 items-center";
+    listDirectionClass = "flex-col gap-9 items-center pt-4";
     listStyle = "";
   }
 
   return (
-    <NavigationMenu className={`${listVisibility}`}>
-      <NavigationMenuList className={`${listDirectionClass}`}>
+    <NavigationMenu className={listVisibility}>
+      <NavigationMenuList className={listDirectionClass}>
         {routes.map((route, index) => (
-          <NavigationMenuItem className="" key={index}>
+          <NavigationMenuItem key={index}>
             <Link href={route.href} legacyBehavior passHref>
               <NavigationMenuLink
                 className={`${navigationMenuTriggerStyle()} ${listStyle}`}
